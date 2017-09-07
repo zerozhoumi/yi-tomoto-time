@@ -1,11 +1,6 @@
 <template>
 <div id="index">
-<div>
-<a class="page-link" href="#/time">番茄钟</a>
-</div>
-<div>
-<a class="page-link" href="#/todo">todo</a>
-</div>
+<h2>现在，创建你的计划吧!</h2>
 </div>
 </template>
 <script>
@@ -13,7 +8,9 @@
 </script>
 <style scoped>
 div{
-background-color: #eee;
+  color: #fff;
+  text-align: center;
+background-color: #B1CCC5;
 }
 </style>
 
