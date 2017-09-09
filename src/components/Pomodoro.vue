@@ -69,7 +69,7 @@
 
 <script>
 export default {
-  name: 'Pomodoro',
+  name: 'tomatoTime',
   props: {
     diameter: {
       type: Number,
