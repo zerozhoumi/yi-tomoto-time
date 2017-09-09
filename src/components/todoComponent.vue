@@ -28,10 +28,18 @@
 
     export default {
       name: 'todoCom',
+//      props: {
+//        todos: {
+//          type: String,
+//          required: false,
+//          default: ''
+//        }
+//      },
       data () {
         return {
           newTodo: '',
           title: 'vue-todos',
+//          父组件需要改变todos的值
           todos: []
         }
       },
@@ -66,6 +74,10 @@
         },
         saveToStore () {
           localStorage.setItem('VUE-TODOS', JSON.stringify(this.todos))
+        },
+        otherAdd (string) {
+          this.newTodo = string
+          this.addItem()
         }
       }
     }

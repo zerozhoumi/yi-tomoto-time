@@ -15,7 +15,7 @@
 
 <script>
   import tomatoTime from '../components/Pomodoro.vue'
-  import bus from '../bus'
+  import bus from '../assets/bus'
 
   export default {
     data () {
@@ -31,7 +31,7 @@
     methods: {
       sendText: function () {
         console.log(this.workThing)
-        bus.$emit('some-event', '111111')
+        bus.$emit('workarea', this.workThing)
       }
     },
     components: {

@@ -3,26 +3,22 @@
 <todo-com>
 
 </todo-com>
-    <!--<button v-on:click="testOn">xx</button>-->
-    <p>{{message}}</p>
+
   </div>
 </template>
 
 <script>
 import todoCom from '../components/todoComponent.vue'
-import bus from '../bus'
+import bus from '../assets/bus'
 
 export default {
   data () {
     return {
-      message: ''
-//        数据传递这再说
     }
   },
-  mounted () {
-    var selfThis = this
-    bus.$on('some-event', function (msg) {
-      selfThis.message = msg
+  created () {
+    bus.$on('workare', function (msg) {
+      console.log(msg)
     })
   },
   components: {
